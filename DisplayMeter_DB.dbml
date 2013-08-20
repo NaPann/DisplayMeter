@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="DisplayMeter" Class="DisplayMeter_DBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=.\SQLEXPRESS2012;Initial Catalog=DisplayMeter;Persist Security Info=True;User ID=sa" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="DisplayMeterConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.mas_Lack" Member="mas_Lacks">
+    <Type Name="mas_Lack">
+      <Column Name="LackUniq" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="LackDescription" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="LackIPAddress" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="LackSorting" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="LogDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="mas_Lack_tran_LogMeter" Member="tran_LogMeters" ThisKey="LackUniq" OtherKey="LackUniq" Type="tran_LogMeter" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tran_LogMeter" Member="tran_LogMeters">
+    <Type Name="tran_LogMeter">
+      <Column Name="LogUniq" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="LackUniq" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="LogMeter" Type="System.Decimal" DbType="Decimal(18,5) NOT NULL" CanBeNull="false" />
+      <Column Name="LogDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="mas_Lack_tran_LogMeter" Member="mas_Lack" ThisKey="LackUniq" OtherKey="LackUniq" Type="mas_Lack" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.sec_User" Member="sec_Users">
+    <Type Name="sec_User">
+      <Column Name="UserUniq" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="UserName" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="Passwd" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="UserDescription" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="LogDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Function Name="dbo.stp_get_LastMeter" Method="stp_get_LastMeter">
+    <ElementType Name="stp_get_LastMeterResult">
+      <Column Name="LackUniq" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="LackDescription" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="LackIPAddress" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="LogMeter" Type="System.Decimal" DbType="Decimal(18,5) NOT NULL" CanBeNull="false" />
+      <Column Name="LogDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.stp_get_LastMeter_ByLackUniq" Method="stp_get_LastMeter_ByLackUniq">
+    <Parameter Name="LackUniq" Parameter="lackUniq" Type="System.Guid" DbType="UniqueIdentifier" />
+    <ElementType Name="stp_get_LastMeter_ByLackUniqResult">
+      <Column Name="LogUniq" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="LackUniq" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="LackDescription" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="LackIPAddress" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="LackSorting" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="LogMeter" Type="System.Decimal" DbType="Decimal(18,5) NOT NULL" CanBeNull="false" />
+      <Column Name="LastUpdate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+</Database>

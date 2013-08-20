@@ -7,19 +7,20 @@ using System.Web.UI.WebControls;
 
 namespace DisplayMeter
 {
-    public partial class Meter : System.Web.UI.MasterPage
+    public partial class Default : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
             {
-                
+                getLastUpdateLack();
             }
         }
-        /// <summary>
-        /// Get LastUpdate Lack Meter
-        /// </summary>
-       
-
+        private void getLastUpdateLack()
+        {
+            List<stp_get_LastMeterResult> result = DisplayMeterClass.getLastMaster();
+            this.RadListView1.DataSource = result;
+        }
     }
+    
 }
