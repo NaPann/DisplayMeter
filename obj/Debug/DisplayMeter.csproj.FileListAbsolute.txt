@@ -1,0 +1,8 @@
+D:\ComPaq\Project\Web\DisplayMeter\bin\DisplayMeter.dll
+D:\ComPaq\Project\Web\DisplayMeter\bin\DisplayMeter.pdb
+D:\ComPaq\Project\Web\DisplayMeter\bin\Telerik.Web.UI.dll
+D:\ComPaq\Project\Web\DisplayMeter\bin\Telerik.Web.UI.Skins.dll
+D:\ComPaq\Project\Web\DisplayMeter\bin\Telerik.Web.UI.xml
+D:\ComPaq\Project\Web\DisplayMeter\obj\Debug\DisplayMeter.csprojResolveAssemblyReference.cache
+D:\ComPaq\Project\Web\DisplayMeter\obj\Debug\DisplayMeter.dll
+D:\ComPaq\Project\Web\DisplayMeter\obj\Debug\DisplayMeter.pdb

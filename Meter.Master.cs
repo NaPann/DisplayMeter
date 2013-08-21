@@ -11,7 +11,15 @@ namespace DisplayMeter
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!IsPostBack)
+            {
+                
+            }
         }
+        /// <summary>
+        /// Get LastUpdate Lack Meter
+        /// </summary>
+       
+
     }
 }

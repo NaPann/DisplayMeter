@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DisplayMeter_DB">
+  <DataContextMoniker Name="/DisplayMeter_DBDataContext" />
+  <nestedChildShapes>
+    <classShape Id="dbad1680-6d0a-40ee-bbc2-0e450d3215c4" absoluteBounds="1.625, 0.75, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/DisplayMeter_DBDataContext/mas_Lack" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7208acc7-111d-4bcd-b3fe-5aa81465e147" absoluteBounds="1.6400000000000001, 1.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="65e91bdc-68de-450e-b4fd-bc3542a1526b" absoluteBounds="4.5, 0.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/DisplayMeter_DBDataContext/tran_LogMeter" />
+      <nestedChildShapes>
+        <elementListCompartment Id="38aa54b8-3298-42b9-b804-4e87548674d2" absoluteBounds="4.515, 1.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3.625 : 1.53929768880208); (4.5 : 1.53929768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DisplayMeter_DBDataContext/mas_Lack/mas_Lack_tran_LogMeter" />
+      <nodes>
+        <classShapeMoniker Id="dbad1680-6d0a-40ee-bbc2-0e450d3215c4" />
+        <classShapeMoniker Id="65e91bdc-68de-450e-b4fd-bc3542a1526b" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="06a94293-ef58-430d-88fb-0ad694eba262" absoluteBounds="2, 3.125, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/DisplayMeter_DBDataContext/sec_User" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6868758a-d72e-41b7-8a79-3ae90d693b1a" absoluteBounds="2.015, 3.585, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
