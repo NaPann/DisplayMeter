@@ -6,3 +6,8 @@ D:\ComPaq\Project\Web\DisplayMeter\bin\Telerik.Web.UI.xml
 D:\ComPaq\Project\Web\DisplayMeter\obj\Debug\DisplayMeter.csprojResolveAssemblyReference.cache
 D:\ComPaq\Project\Web\DisplayMeter\obj\Debug\DisplayMeter.dll
 D:\ComPaq\Project\Web\DisplayMeter\obj\Debug\DisplayMeter.pdb
+C:\Users\thannapan\Documents\GitHub\DisplayMeter\bin\DisplayMeter.dll
+C:\Users\thannapan\Documents\GitHub\DisplayMeter\bin\DisplayMeter.pdb
+C:\Users\thannapan\Documents\GitHub\DisplayMeter\obj\Debug\DisplayMeter.dll
+C:\Users\thannapan\Documents\GitHub\DisplayMeter\obj\Debug\DisplayMeter.pdb
+C:\Users\thannapan\Documents\GitHub\DisplayMeter\obj\Debug\DisplayMeter.csprojResolveAssemblyReference.cache

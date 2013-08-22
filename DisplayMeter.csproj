@@ -64,8 +64,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\style.css" />
     <Content Include="Default.aspx" />
     <Content Include="DisplayMeterCss.css" />
+    <Content Include="img\close.png" />
+    <Content Include="img\login.png" />
+    <Content Include="img\moreinfo.png" />
+    <Content Include="LackInfo.aspx" />
+    <Content Include="LoginInfo.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -81,6 +87,20 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DisplayMeter_DB.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="LackInfo.aspx.cs">
+      <DependentUpon>LackInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LackInfo.aspx.designer.cs">
+      <DependentUpon>LackInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoginInfo.aspx.cs">
+      <DependentUpon>LoginInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoginInfo.aspx.designer.cs">
+      <DependentUpon>LoginInfo.aspx</DependentUpon>
     </Compile>
     <Compile Include="Meter.Master.cs">
       <DependentUpon>Meter.Master</DependentUpon>
@@ -98,6 +118,7 @@
       <LastGenOutput>DisplayMeter_DB.designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="scss\style.scss" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -113,6 +134,7 @@
       <DependentUpon>DisplayMeter_DB.dbml</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

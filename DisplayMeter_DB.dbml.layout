@@ -8,24 +8,31 @@
         <elementListCompartment Id="7208acc7-111d-4bcd-b3fe-5aa81465e147" absoluteBounds="1.6400000000000001, 1.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="65e91bdc-68de-450e-b4fd-bc3542a1526b" absoluteBounds="4.5, 0.75, 2, 1.5785953776041666">
-      <DataClassMoniker Name="/DisplayMeter_DBDataContext/tran_LogMeter" />
+    <classShape Id="06a94293-ef58-430d-88fb-0ad694eba262" absoluteBounds="1.5, 2.875, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/DisplayMeter_DBDataContext/sec_User" />
       <nestedChildShapes>
-        <elementListCompartment Id="38aa54b8-3298-42b9-b804-4e87548674d2" absoluteBounds="4.515, 1.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="6868758a-d72e-41b7-8a79-3ae90d693b1a" absoluteBounds="1.5150000000000001, 3.335, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <associationConnector edgePoints="[(3.625 : 1.53929768880208); (4.5 : 1.53929768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <classShape Id="939e741e-4266-4bf5-97f6-6adb164d59b3" absoluteBounds="5, 1.5, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/DisplayMeter_DBDataContext/tran_LogMeter" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8ae9c07a-98a7-4d33-9192-c265203a15ed" absoluteBounds="5.015, 1.96, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3.625 : 2.01044840494792); (5 : 2.01044840494792)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/DisplayMeter_DBDataContext/mas_Lack/mas_Lack_tran_LogMeter" />
       <nodes>
         <classShapeMoniker Id="dbad1680-6d0a-40ee-bbc2-0e450d3215c4" />
-        <classShapeMoniker Id="65e91bdc-68de-450e-b4fd-bc3542a1526b" />
+        <classShapeMoniker Id="939e741e-4266-4bf5-97f6-6adb164d59b3" />
       </nodes>
     </associationConnector>
-    <classShape Id="06a94293-ef58-430d-88fb-0ad694eba262" absoluteBounds="2, 3.125, 2, 1.7708968098958331">
-      <DataClassMoniker Name="/DisplayMeter_DBDataContext/sec_User" />
-      <nestedChildShapes>
-        <elementListCompartment Id="6868758a-d72e-41b7-8a79-3ae90d693b1a" absoluteBounds="2.015, 3.585, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
-      </nestedChildShapes>
-    </classShape>
+    <associationConnector edgePoints="[(3.5 : 3.36140055338542); (5 : 3.36140055338542)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DisplayMeter_DBDataContext/sec_User/sec_User_tran_LogMeter" />
+      <nodes>
+        <classShapeMoniker Id="06a94293-ef58-430d-88fb-0ad694eba262" />
+        <classShapeMoniker Id="939e741e-4266-4bf5-97f6-6adb164d59b3" />
+      </nodes>
+    </associationConnector>
   </nestedChildShapes>
 </ordesignerObjectsDiagram>
